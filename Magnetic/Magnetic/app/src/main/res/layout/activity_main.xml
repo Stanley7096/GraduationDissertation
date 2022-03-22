@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/order"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="myapplication.sensors_all.MainActivity">
+
+
+    <TextView
+
+        android:id="@+id/etGyro"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/etMagnetic"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/etLinearAcc"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/etGravityAcc"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:visibility="visible" />
+
+    <Button
+
+        android:id="@+id/bn1"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Start" />
+
+    <Button
+
+
+        android:id="@+id/bn2"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="stop" />
+
+    <Button
+
+        android:id="@+id/bn3"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="请输入文件名：" />
+
+    <EditText
+
+        android:id="@+id/filename"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/number"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="36sp" />
+
+</LinearLayout>
