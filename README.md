@@ -21,3 +21,26 @@ I use the linked list to save the magnetic data and use function getExcelDir to 
 ## LSTM:
 
 This is the basic framework of the LSTM network, the data file I get from the app is called LSTM.csv. By building a three-layer LSTM nerual network and choosing a good activation function and loss function, I get the training result of the network and compare the test value with the real value.
+
+## Matlab:
+
+I mainly use Matlab to do data preprocessing. Here are some main & crucial command I take use of:
+
+When denoising data using S-G filter:
+
+```Matlab
+lstm=smoothdata(LSTM,'sgolay')
+```
+
+when normalizing data:
+
+```Matlab
+cz=normalize(mag,'range')
+```
+
+when interpolating data:
+
+```Matlab
+[X,Y,Z]=griddata(cx,cy,mag,linspace(min(cx),max(cx))',linspace(min(cy),max(cy)),'v4')
+figure,mesh(X,Y,Z)
+```
